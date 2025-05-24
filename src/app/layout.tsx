@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+import Header from "@/components/header/Header";
+import Wrapper from "@/components/wrapper/Wrapper";
+import AnimatedBackground from "@/components/animatedBackground/AnimatedBackground";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -25,6 +29,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        {/* <AnimatedBackground /> */}
+        <Header />
+        {/* <Wrapper>{children}</Wrapper> */}
         {children}
       </body>
     </html>
