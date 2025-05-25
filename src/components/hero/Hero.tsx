@@ -43,6 +43,7 @@ export default function Hero() {
           </h2>
         </div>
       </div>
+      <div className={style.hero__phantom}></div>
     </>
   );
 }

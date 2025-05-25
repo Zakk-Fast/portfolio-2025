@@ -1,14 +1,33 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "./Header.module.scss";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [boostZ, setBoostZ] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+
+    const timer = setTimeout(() => {
+      document.body.style.overflow = "";
+      setBoostZ(true);
+    }, 4000);
+
+    return () => {
+      clearTimeout(timer);
+      document.body.style.overflow = "";
+    };
+  }, []);
 
   return (
-    <div className={styles.navigation}>
+    <div
+      className={`${styles.navigation} ${
+        boostZ ? styles["navigation--boosted"] : ""
+      }`}
+    >
       <div className={styles.navigation__inner}>
         <div className={styles["navigation__inner--left"]}>
           <Link href="/">Zakk Fast</Link>
