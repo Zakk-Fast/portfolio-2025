@@ -15,8 +15,6 @@ export default function Hero() {
   return (
     <>
       <AnimatedBackground />
-
-      {/* Fixed overlay text */}
       <div className={style.hero__fixedText}>
         <p className={style.hero__subtitle}>Creative</p>
         <h1
@@ -34,7 +32,6 @@ export default function Hero() {
         </h1>
       </div>
 
-      {/* Layout content */}
       <div className={style.hero__container}>
         <div className={style["hero__container-left-block"]}>
           <h2 className={style.hero__description}>
