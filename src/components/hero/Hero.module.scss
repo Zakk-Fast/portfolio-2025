@@ -35,14 +35,14 @@
         font-family: "Migra-Extralight-Italic";
         font-weight: 100;
         font-size: calc(var(--fs-md) * 2.75);
-        line-height: 1.2;
+        line-height: 1.25;
         margin-top: 48px;
         margin-bottom: 48px;
 
         .hero__titleLine {
           position: relative;
           display: block;
-          transform: scaleY(1.75);
+          transform: scaleY(1.7);
           transform-origin: top;
           margin-bottom: -16px;
         }

@@ -20,8 +20,8 @@ export default function Hero() {
         </div>
         <div className={style["hero__container-left-block"]}>
           <h2 className={style.hero__description}>
-            I&apos;m a front-end developer and tinkerer based in the US. For the
-            past few years, I&apos;ve worked on real-world products with
+            I&apos;m a full-stack developer and tinkerer based in the US. For
+            the past few years, I&apos;ve worked on real-world products with
             fast-moving teams, building intuitive interfaces and thoughtful user
             experiences. I love pixel art, Dungeons & Dragons, and exploring how
             things work.. mostly by breaking them first.
