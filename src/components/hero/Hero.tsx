@@ -13,7 +13,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <>
+    <div id="home">
       <AnimatedBackground />
       <div className={style.hero__fixedText}>
         <p className={style.hero__subtitle}>Creative</p>
@@ -44,6 +44,6 @@ export default function Hero() {
         </div>
       </div>
       <div className={style.hero__phantom}></div>
-    </>
+    </div>
   );
 }

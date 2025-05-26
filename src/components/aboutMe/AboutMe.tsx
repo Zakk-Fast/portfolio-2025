@@ -3,7 +3,7 @@ import style from "./AboutMe.module.scss";
 
 export default function Aboutme() {
   return (
-    <div className={style.aboutme}>
+    <div className={style.aboutme} id="about">
       <ModelRender />
       <div className={style.aboutme__container}>
         <h1>

@@ -30,7 +30,7 @@ export default function Header() {
     >
       <div className={styles.navigation__inner}>
         <div className={styles["navigation__inner--left"]}>
-          <Link href="/">Zakk Fast</Link>
+          <Link href="#home">Zakk Fast</Link>
           <p>UX|UI Designer - Developer</p>
         </div>
 
@@ -44,7 +44,7 @@ export default function Header() {
         </div>
 
         <div className={styles["navigation__inner--right"]}>
-          <Link href="/">about</Link>
+          <Link href="#about">about</Link>
           <Link href="/">contact</Link>
         </div>
       </div>
